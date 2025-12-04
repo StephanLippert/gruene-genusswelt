@@ -1,0 +1,15 @@
+:root {
+    --display-text: "Libre-Baskerville", "Times New Roman", "serif";
+    --body-text: "Hind-Madurai", Arial, serif;
+    --byline: "Lora", "Times New Roman" "serif";
+    --primary: #116156;
+    --secondary: #edaa05;
+    --base: #fff3e3;
+    --light: #e0e0e0;
+    --dark: #424242;
+    --p-1: 1rem;
+    --p-2: 2rem;
+    --p-3: 3.2rem;
+    --p-4: 4rem;
+
+}

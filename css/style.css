@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Schrifften */
+html {
+    font-family: var(--body-text);
+    /* Hier ist es wichtig Prozentsätze anzugeben, damit die Schriftgröße in den Userpräferenzen überschrieben werden kann! (125% = 20px)*/
+    font-size: 125%;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+/* Überschriften */
+h1 {
+    Font-size: 3.375rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.byline {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: var(--byline);
+}
+
+h1,
+h2,
+h3 {
+    Line-height: 120%;
+    letter-spacing: -2px;
+    font-family: var(--display-text);
+}
+
+/* Abstände */
+/* Vertikal */
+.py-1 {
+    padding-top: var(--p1);
+    padding-bottom: var(--p1);
+}
+
+.py-2 {
+    padding-top: var(--p-2);
+    padding-bottom: var(--p-2);
+}
+
+.py-3 {
+    padding-top: var(--p-3);
+    padding-bottom: var(--p-3);
+}
+
+.py-4 {
+    padding-top: var(--p-4);
+    padding-bottom: var(--p-4);
+}
+
+/* Horizontal */
+.px-1 {
+    padding-left: var(--p-1);
+    padding-right: var(--p-1);
+}
+
+.px-2 {
+    padding-left: var(--p-2);
+    padding-right: var(--p-2);
+}
+
+.px-3 {
+    padding-left: var(--p-3);
+    padding-right: var(--p-3);
+}
+
+.px-4 {
+    padding-left: var(--p-4);
+    padding-right: var(--p-4);
+}
+
+/* Bilder */
+img {
+    /* max-widht heisst es wird nicht größer als die original Bildgröße.
+    Dies ist quasi ein defaultwert. */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Schriftformatierung */
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* Links */
+
+a {
+    color: var(--dark);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Buttons */
+
+.btn {
+    padding: 0.8rem 1.2rem;
+    /* display: inline-block; = damit es nicht "überlappt"*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border: none;
+
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+a:hover,
+.buttons:hover {
+    filter: brightness(80%);
+}
+
+a:has(i) {
+    line-height: 0;
+}
+
+/* Icons */
+i {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

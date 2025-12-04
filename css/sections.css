@@ -1,0 +1,285 @@
+/* Navigation */
+header {
+    position: sticky;
+}
+
+nav {
+    justify-content: space-between;
+    height: 10vh;
+}
+
+nav ul {
+    list-style: none;
+    gap: 1rem;
+}
+
+.icons button {
+    background-color: transparent;
+    border: none;
+
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: url("../img/gg-hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cta {
+    background-color: var(--base);
+    margin-left: 10%;
+    flex-direction: column;
+    gap: 1.8rem;
+    width: 50%;
+    max-width: 780px;
+}
+
+.buttons-container {
+    gap: 0.8rem;
+}
+
+.cta a {
+    min-width: 10rem;
+}
+
+/* Neue Rezepte */
+.neue-rezepte {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-container {
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    gap: 3rem;
+    width: 75%;
+}
+
+.card {
+    border: 1px solid var(--light);
+    box-shadow: 8px 8px 24px #E0E0E080;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+/* About */
+.about {
+    background-color: var(--base);
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about>div {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 497px;
+    /* shorthand */
+    /* flex: 0 1 497px; */
+}
+
+/* Newsletter */
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.newsletter {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.newsletter-form {
+    gap: 1.2rem;
+    flex-direction: column;
+}
+
+.checkboxes {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.checkbox-1,
+.checkbox-2 {
+    accent-color: var(--light);
+    gap: 0.8rem;
+}
+
+.anmelden {
+    align-items: end;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.anmelden div {
+    flex-direction: column;
+
+}
+
+.anmelden input[type="email"] {
+    min-height: 3.2rem;
+    width: 24rem;
+
+}
+
+.anmelden button {
+    min-height: 3.2rem;
+}
+
+/* Fokus States */
+input[type="checkbox"]:focus-visible,
+input[type="email"]:focus-visible {
+    border: 1px solid white;
+    outline: 3px solid var(--primary);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+footer a {
+    color: var(--light);
+    font-weight: normal;
+}
+
+footer address {
+    font-style: normal;
+}
+
+.social-icons {
+    gap: 1rem
+}
+
+.kontakt {
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.rechtliches {
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* Hamburger Navigation */
+.hamburger {
+    display: none;
+}
+
+.closebtn,
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.closebtn i,
+.hamburger i {
+    font-size: 1.8rem;
+}
+
+/* Overlay */
+.overlay {
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+.overlay-content {
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 2rem;
+    padding: 0;
+    gap: 1rem;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+/* Tablet Mediaquerries (Breakpoints) */
+@media screen and (width<=992px) {
+    html {
+        font-size: 100%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .cta {
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-container a {
+        min-width: 14rem;
+    }
+}
+
+/* Smartphones (Breakpoint) */
+
+@media screen and (width<576px) {
+
+    nav .icons,
+    nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero {
+        align-items: flex-end;
+
+    }
+
+    /* Hero-Bereich */
+    .cta {
+        width: 100%;
+        background-color: #fff3e399;
+    }
+
+    /* Neue Rezepte */
+    .card-container {
+        width: 90%;
+    }
+
+    .card {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Newsletter */
+    .anmelden input[type="email"] {
+        width: 100%;
+    }
+
+    .anmelden div {
+        width: 100%;
+    }
+}
